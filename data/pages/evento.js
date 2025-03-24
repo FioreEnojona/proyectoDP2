@@ -20,12 +20,12 @@ eventoNuevo: [
     },
     {
         imgNuevoEvento: 'https://picsum.photos/id/219/200/300', // Imagen de un conejo
-        altNuevoEvento: 'Taller de cuidado de mascotas',
-        nuevoEventoh3: 'Taller de Cuidado de Mascotas',
+        altNuevoEvento: 'Anim',
+        nuevoEventoh3: 'Taller para Perros de Asistencia',
         fecha: '29 de octubre de 2023',
         hora: '9:00 AM - 12:00 PM',
         lugar: 'Centro Comunitario Animalista, Zona Este',
-        descripcionNuevo: 'Aprende sobre el cuidado adecuado de mascotas, alimentación, higiene y salud. ¡Todos son bienvenidos!'
+        descripcionNuevo: 'Entrenaremos perros rescatados para que sean perros de asistencia. Porque los caninos rescatados pueden lograr mucho'
     },
     {
         imgNuevoEvento: 'https://picsum.photos/id/1074/200/300', // Imagen de un perro y un gato
@@ -47,13 +47,43 @@ eventoNuevo: [
     }
 ],
 eventoPasado:[
-    {
-        imgNuevoEvento: '',
-        altPasadoEvento:'',
-        nuevoEventoh3:'',
-        descripcionPasado:''
-    }
-],
+        {
+            imgNuevoEvento: 'https://picsum.photos/id/1062/200/300',
+            altPasadoEvento: 'Jornada de baño para burros',
+            nuevoEventoh3: 'Día de Spa para Burros',
+            descripcionPasado: 'Jornada especial de baño y cuidado para burros rescatados. Los voluntarios ayudaron a limpiar y cepillar a 15 burros de nuestro refugio.'
+        },
+        {
+            imgNuevoEvento: 'https://picsum.photos/id/592/200/300', 
+            altPasadoEvento: 'Cuidado de caballos',
+            nuevoEventoh3: 'Terapia Equina',
+            descripcionPasado: 'Sesiones de cuidado y rehabilitación para caballos maltratados. Realizamos tratamientos podológicos y masajes terapéuticos.'
+        },
+        {
+            imgNuevoEvento: 'https://picsum.photos/id/219/200/300', 
+            altPasadoEvento: 'Taller de conejos',
+            nuevoEventoh3: 'Cuidado Especial para Conejos',
+            descripcionPasado: 'Taller práctico sobre alimentación, jaulas adecuadas y signos de enfermedad en conejos domésticos. Asistieron 20 dueños con sus mascotas.'
+        },
+        {
+            imgNuevoEvento: 'https://picsum.photos/id/201/200/300', 
+            altPasadoEvento: 'Campaña para aves',
+            nuevoEventoh3: 'Salvando Pollitos Recién Nacidos',
+            descripcionPasado: 'Recaudamos $1,500 para comprar incubadoras y alimento especial para 30 pollitos abandonados que rescatamos.'
+        },
+        {
+            imgNuevoEvento: 'https://picsum.photos/id/598/200/300', 
+            altPasadoEvento: 'Vacunación de aves',
+            nuevoEventoh3: 'Campaña de Vacunación Avícola',
+            descripcionPasado: 'Vacunamos contra la enfermedad de Newcastle a 85 gallinas de familias de bajos recursos en la zona rural.'
+        },
+        {
+            imgNuevoEvento: 'https://picsum.photos/id/145/200/300', 
+            altPasadoEvento: 'Alimentación de reptiles',
+            nuevoEventoh3: 'Nutrición para Iguanas Rescatadas',
+            descripcionPasado: 'Preparamos dietas especiales para 12 iguanas víctimas de tráfico ilegal, con suplementos de calcio y vitaminas.'
+        }
+    ],
 eventoSlide: [
     {
         imgEventoSlide:'',
