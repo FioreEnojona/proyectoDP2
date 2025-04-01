@@ -1,0 +1,11 @@
+<div class="galeria">
+  {{#each galeria}}
+    <div class="tarjeta">
+      <img src="{{this.src}}" alt="{{this.alt}}">
+      <div class="contenido">
+        <h3>{{this.titulo}}</h3>
+        <p>{{this.descripcion}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>
