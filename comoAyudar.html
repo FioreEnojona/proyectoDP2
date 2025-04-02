@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Ayudar en Animalandia</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Cómo Ayudar en Animalandia</h1>
+    </header>
+    <main>
+        <div id="help-section"></div>
+    </main>
+    <script>
+        fetch('/components/HelpSection.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('help-section').innerHTML = html);
+    </script>
+</body>
+</html>
+
+<!-- components/HelpSection.html -->
+<section class="help">
+    <h2>Formas de ayudar a Animalandia</h2>
+    <ul>
+        <li>Donando alimentos y medicinas</li>
+        <li>Adoptando un animal</li>
+        <li>Haciendo voluntariado</li>
+        <li>Compartiendo información</li>
+    </ul>
+</section>
