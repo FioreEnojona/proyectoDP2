@@ -1,16 +1,16 @@
 export const eventos = {
     eventoNuevo: [
         {
-            imgNuevoEvento: 'https://picsum.photos/id/237/200/300', // Imagen de un perro
-            altNuevoEvento: 'Adopción de perros',
-            nuevoEventoh3: 'Jornada de Adopción de Perros',
+            imgNuevoEvento: 'img/gatoadopcion.jpg',
+            altNuevoEvento: 'Adopción de gatuna',
+            nuevoEventoh3: 'Evento Adopción de Gatos',
             fecha: '15 de octubre de 2023',
             hora: '10:00 AM - 4:00 PM',
             lugar: 'Parque de los Animales, Zona Sur',
             descripcionNuevo: 'Ven y conoce a nuestros amigos peludos que buscan un hogar. ¡Adopta y cambia una vida!'
         },
         {
-            imgNuevoEvento: 'https://picsum.photos/id/200/200/300', // Imagen de un gato
+            imgNuevoEvento: 'img/esterilizacion.jpg',
             altNuevoEvento: 'Campaña de esterilización',
             nuevoEventoh3: 'Campaña de Esterilización Gratuita',
             fecha: '22 de octubre de 2023',
@@ -19,7 +19,7 @@ export const eventos = {
             descripcionNuevo: 'Ofrecemos esterilizaciones gratuitas para gatos y perros. ¡Ayúdanos a controlar la población animal!'
         },
         {
-            imgNuevoEvento: 'https://picsum.photos/id/219/200/300', // Imagen de un conejo
+            imgNuevoEvento: 'img/SILLARUEDAS22.jpg',
             altNuevoEvento: 'Anim',
             nuevoEventoh3: 'Taller para Perros de Asistencia',
             fecha: '29 de octubre de 2023',
@@ -28,7 +28,7 @@ export const eventos = {
             descripcionNuevo: 'Entrenaremos perros rescatados para que sean perros de asistencia. Porque los caninos rescatados pueden lograr mucho'
         },
         {
-            imgNuevoEvento: 'https://picsum.photos/id/1074/200/300', // Imagen de un perro y un gato
+            imgNuevoEvento: 'img/abraza.jpg',
             altNuevoEvento: 'Feria de donaciones',
             nuevoEventoh3: 'Feria de Donaciones para Animales',
             fecha: '5 de noviembre de 2023',
@@ -37,7 +37,7 @@ export const eventos = {
             descripcionNuevo: 'Trae donaciones de comida, juguetes y medicinas para nuestros amigos peludos. ¡Tu ayuda es invaluable!'
         },
         {
-            imgNuevoEvento: 'https://picsum.photos/id/593/200/300', // Imagen de un pájaro
+            imgNuevoEvento: 'img/gallina.jpg',
             altNuevoEvento: 'Charla sobre aves',
             nuevoEventoh3: 'Charla sobre el Cuidado de Aves',
             fecha: '12 de noviembre de 2023',
@@ -48,37 +48,37 @@ export const eventos = {
     ],
     eventoPasado: [
         {
-            imgNuevoEvento: 'https://picsum.photos/id/1062/200/300',
+            imgNuevoEvento: 'img/burro.jpg',
             altPasadoEvento: 'Jornada de baño para burros',
             nuevoEventoh3: 'Día de Spa para Burros',
             descripcionPasado: 'Jornada especial de baño y cuidado para burros rescatados. Los voluntarios ayudaron a limpiar y cepillar a 15 burros de nuestro refugio.'
         },
         {
-            imgNuevoEvento: 'https://picsum.photos/id/592/200/300',
-            altPasadoEvento: 'Cuidado de caballos',
-            nuevoEventoh3: 'Terapia Equina',
-            descripcionPasado: 'Sesiones de cuidado y rehabilitación para caballos maltratados. Realizamos tratamientos podológicos y masajes terapéuticos.'
+            imgNuevoEvento: 'img/perrovotella.jpg',
+            altPasadoEvento: 'Ayuda',
+            nuevoEventoh3: 'Ayuda a Perros de la Calle',
+            descripcionPasado: 'Sesiones de cuidado y rehabilitación para perros maltratados. '
         },
         {
-            imgNuevoEvento: 'https://picsum.photos/id/219/200/300',
+            imgNuevoEvento: 'img/conejo.jpg',
             altPasadoEvento: 'Taller de conejos',
             nuevoEventoh3: 'Cuidado Especial para Conejos',
             descripcionPasado: 'Taller práctico sobre alimentación, jaulas adecuadas y signos de enfermedad en conejos domésticos. Asistieron 20 dueños con sus mascotas.'
         },
         {
-            imgNuevoEvento: 'https://picsum.photos/id/201/200/300',
+            imgNuevoEvento: 'img/pajarito.jpg',
             altPasadoEvento: 'Campaña para aves',
             nuevoEventoh3: 'Salvando Pollitos Recién Nacidos',
             descripcionPasado: 'Recaudamos $1,500 para comprar incubadoras y alimento especial para 30 pollitos abandonados que rescatamos.'
         },
         {
-            imgNuevoEvento: 'https://picsum.photos/id/598/200/300',
-            altPasadoEvento: 'Vacunación de aves',
-            nuevoEventoh3: 'Campaña de Vacunación Avícola',
-            descripcionPasado: 'Vacunamos contra la enfermedad de Newcastle a 85 gallinas de familias de bajos recursos en la zona rural.'
+            imgNuevoEvento: 'img/ovejas.jpg',
+            altPasadoEvento: 'ovejas',
+            nuevoEventoh3: 'Zoologico abierto',
+            descripcionPasado: 'Abrimos neustras puertas para que puedas tener actividades con las ovejas.'
         },
         {
-            imgNuevoEvento: 'https://picsum.photos/id/145/200/300',
+            imgNuevoEvento: 'img/iguana.jpg',
             altPasadoEvento: 'Alimentación de reptiles',
             nuevoEventoh3: 'Nutrición para Iguanas Rescatadas',
             descripcionPasado: 'Preparamos dietas especiales para 12 iguanas víctimas de tráfico ilegal, con suplementos de calcio y vitaminas.'
@@ -87,28 +87,28 @@ export const eventos = {
     eventoSlide: [
 
         {
-            imgEventoSlide: 'https://picsum.photos/id/237/200/300',
-            altEventoSlide: 'Adopción de perros',
-            slideEventoh2: 'Jornada de Adopción de Perros',
-            lugarSlide: 'Parque de los Animales, Zona Sur',  
-            fechaSlide: '15 de octubre de 2023',  
-            linkEvento: 'contactanos.html#formulario'
+            imgEventoSlide: 'img/gatoadopcion.jpg',
+            altEventoSlide: 'Evento de Adopción Felina',
+            slideEventoh2: 'Evento de Adopción Felina',
+            lugarSlide: 'Parque de los Animales, Zona Sur',
+            fechaSlide: '15 de octubre de 2023',
+            linkEvento: '#proximos-eventos'
         },
         {
-            imgEventoSlide: 'https://picsum.photos/id/200/200/300',
+            imgEventoSlide: 'img/SILLARUEDAS22.jpg',
             altEventoSlide: 'Campaña de esterilización',
             slideEventoh2: 'Campaña de Esterilización Gratuita',
-            lugarSlide: 'Clínica Veterinaria Amigos Peludos, Zona Centro',  
-            fechaSlide: '22 de octubre de 2023', 
-            linkEvento: 'contactanos.html#formulario'
+            lugarSlide: 'Clínica Veterinaria Amigos Peludos, Zona Centro',
+            fechaSlide: '22 de octubre de 2023',
+            linkEvento: '#proximos-eventos'
         },
         {
-            imgEventoSlide: 'https://picsum.photos/id/219/200/300',
+            imgEventoSlide: 'img/esterilizacion.jpg',
             altEventoSlide: 'Taller para perros',
             slideEventoh2: 'Taller para Perros de Asistencia',
-            lugarSlide: 'Centro Comunitario Animalista, Zona Este',  
-            fechaSlide: '29 de octubre de 2023', 
-            linkEvento: 'contactanos.html#formulario'
+            lugarSlide: 'Centro Comunitario Animalista, Zona Este',
+            fechaSlide: '29 de octubre de 2023',
+            linkEvento: '#proximos-eventos'
         }
     ]
 }
