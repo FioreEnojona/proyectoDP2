@@ -1,4 +1,12 @@
+
+<!-- HTML Actualizado -->
 <div class="banner">
+  <button class="menu-toggle" aria-label="Abrir menú">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+  
   <div class="overlay">
     <h1 class="banner-title">Bienvenidos a Animalandia</h1>
     
@@ -18,3 +26,10 @@
     </nav>
   </div>
 </div>
+
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.banner-nav ul').classList.toggle('active');
+});
+</script>
