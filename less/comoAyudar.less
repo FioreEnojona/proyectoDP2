@@ -7,12 +7,19 @@
     height: auto;
     background-color: #f9f9f9;
     flex: 1;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
-.programas{
+
+.programas {
     display: flex;
     flex-wrap: wrap;
-
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
 }
+
 /* Estilos para las tarjetas */
 .tarjeta {
     display: flex;
@@ -20,10 +27,28 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    width: 90vw;
+    width: 100%;
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+@media (min-width: 721px) {
+    .tarjeta {
+        width: calc(50% - 20px); /* 2 tarjetas por fila */
+        max-width: none;
+    }
+    
+    .container {
+        padding: 20px 5%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tarjeta {
+        width: calc(33.33% - 20px); /* 3 tarjetas por fila en pantallas grandes */
+    }
 }
 
 .tarjeta:hover {
@@ -33,7 +58,7 @@
 
 .tarjeta img {
     width: 100%;
-    height: 50%; 
+    height: 200px;
     object-fit: cover;
     object-position: center center;
 }
@@ -41,23 +66,24 @@
 .tarjeta h2 {
     margin: 0;
     padding: 0.8rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     background-color: #d52b2b;
     color: white;
     text-align: center;
 }
 
 .tarjeta p {
-    padding: 10px;
+    padding: 15px;
     font-size: 1rem;
     color: #555;
     text-align: center;
+    flex-grow: 1;
 }
 
 .tarjeta a {
     display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
+    margin: 15px auto;
+    padding: 12px 25px;
     background-color: #d52b2b;
     color: white;
     text-align: center;
@@ -71,4 +97,3 @@
 .tarjeta a:hover {
     background-color: #a92323;
 }
-
