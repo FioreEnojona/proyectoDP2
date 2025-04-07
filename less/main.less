@@ -1,0 +1,35 @@
+@import 'carrusel.less';
+@import 'card.less';
+@import 'card2.less';
+@import 'historia.less';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #90d287;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rescue-title {
+    text-align: center;
+    font-weight: bold;
+    color: #034d03;
+    font-size: 5vw; /* El tamaño de la fuente es relativo al ancho de la pantalla */
+    margin: 0;
+  }
+
+@breakResolutions: {
+    tablet: 720px;
+    desktop: 1024px;
+    widescreen: 1300px; 
+    ultrawide: 2000px;
+};
