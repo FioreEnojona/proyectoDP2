@@ -5,7 +5,7 @@
     padding: 20px;
     justify-content: center;
     height: auto;
-    background-color: #f9f9f9;
+    background-color: @color-verde-tingido;
     flex: 1;
     width: 100%;
     max-width: 100%;
@@ -20,15 +20,14 @@
     justify-content: center;
 }
 
-/* Estilos para las tarjetas */
 .tarjeta {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ddd;
+    border: 1px solid @color-verde-claro;
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
-    background-color: #fff;
+    background-color: @color-verde-muy-oscuro;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
@@ -36,7 +35,7 @@
 
 @media (min-width: 721px) {
     .tarjeta {
-        width: calc(50% - 20px); /* 2 tarjetas por fila */
+        width: calc(50% - 20px);
         max-width: none;
     }
     
@@ -47,7 +46,7 @@
 
 @media (min-width: 1024px) {
     .tarjeta {
-        width: calc(33.33% - 20px); /* 3 tarjetas por fila en pantallas grandes */
+        width: calc(33.33% - 20px);
     }
 }
 
@@ -67,7 +66,7 @@
     margin: 0;
     padding: 0.8rem;
     font-size: 1.3rem;
-    background-color: #d52b2b;
+    background-color: @color-verde-medio;
     color: white;
     text-align: center;
 }
@@ -75,7 +74,7 @@
 .tarjeta p {
     padding: 15px;
     font-size: 1rem;
-    color: #555;
+    color: white;
     text-align: center;
     flex-grow: 1;
 }
@@ -84,7 +83,7 @@
     display: block;
     margin: 15px auto;
     padding: 12px 25px;
-    background-color: #d52b2b;
+    background-color: @color-verde-medio;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -95,5 +94,5 @@
 }
 
 .tarjeta a:hover {
-    background-color: #a92323;
+    background-color: @color-verde-oscuro;
 }
