@@ -1,7 +1,7 @@
 export const noticias = {
     noticiaSlide: [
         {
-            imgNoticiaSlide: 'https://picsum.photos/id/2/200/300',
+            imgNoticiaSlide: '../imagenes/Adoptar.jpg',
             altNoticiaSlide: 'Campaña de adopción',
             slideNoticiah2: 'Campaña de Adopción de Gatos',
             lugarSlide: 'Centro de Adopciones Animalandia, Zona Sur',
@@ -9,7 +9,7 @@ export const noticias = {
             linkNoticia: 'contactenos.html#formulario'
         },
         {
-            imgNoticiaSlide: 'https://picsum.photos/id/3/200/300',
+            imgNoticiaSlide: '../imagenes/Donacion.jpg',
             altNoticiaSlide: 'Evento de donaciones',
             slideNoticiah2: 'Feria de Donaciones para Animales',
             lugarSlide: 'Plaza Principal, Zona Centro',
@@ -17,7 +17,7 @@ export const noticias = {
             linkNoticia: 'contactenos.html#formulario'
         },
         {
-            imgNoticiaSlide: 'https://picsum.photos/id/4/200/300',
+            imgNoticiaSlide: '../imagenes/Cuidado.jpg',
             altNoticiaSlide: 'Taller educativo',
             slideNoticiah2: 'Taller sobre el Cuidado de Mascotas',
             lugarSlide: 'Auditorio Animalandia, Zona Norte',
@@ -25,7 +25,7 @@ export const noticias = {
             linkNoticia: 'contactenos.html#formulario'
         },
         {
-            imgNoticiaSlide: 'https://picsum.photos/id/5/200/300',
+            imgNoticiaSlide: '../imagenes/Rescate.jpg',
             altNoticiaSlide: 'Evento familiar',
             slideNoticiah2: 'Día Familiar con Animales Rescatados',
             lugarSlide: 'Parque Central, Zona Este',
@@ -33,7 +33,7 @@ export const noticias = {
             linkNoticia: 'contactenos.html#formulario'
         },
         {
-            imgNoticiaSlide: 'https://picsum.photos/id/6/200/300',
+            imgNoticiaSlide: '../imagenes/Esterelizar.jpg',
             altNoticiaSlide: 'Campaña de esterilización',
             slideNoticiah2: 'Campaña Gratuita de Esterilización para Mascotas',
             lugarSlide: 'Clínica Veterinaria Animalandia, Zona Oeste',
