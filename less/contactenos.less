@@ -1,82 +1,132 @@
 h1, h2 {
     text-align: center;
     color: @color-verde-tingido;
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
 }
 
-.contacto-info {
+.contacto-info, .contacto-formulario {
     background-color: white;
     padding: 2rem;
     max-width: 800px;
     margin: 2rem auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-    ul {
-        list-style: none;
-        padding: 0;
-        
-        li {
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-    }
 }
 
-.contacto-formulario {
-    background-color: white;
-    padding: 2rem;
-    max-width: 800px;
-    margin: 2rem auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-    form {
-        display: flex;
-        flex-direction: column;
-
-        label {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        input, textarea {
-            padding: 0.8rem;
-            margin-bottom: 1.2rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-
-        .btn-submit {
-            padding: 1rem;
-            background-color: @color-verde-claro;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-submit:hover {
-            background-color: @color-verde-oscuro;
-        }
-    }
+.contacto-info ul {
+    list-style: none;
+    padding: 0;
 }
 
+.contacto-info li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+}
 
-@media screen and (max-width: 768px) {
+.contacto-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-formulario label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contacto-formulario .btn-submit {
+    padding: 1rem;
+    background-color: @color-verde-claro;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-formulario .btn-submit:hover {
+    background-color: @color-verde-oscuro;
+}
+
+/* ----------- MEDIA QUERIES ----------- */
+
+/* Tablets grandes / Laptops pequeñas */
+@media screen and (max-width: 1024px) {
+    h1, h2 {
+        font-size: 2rem;
+    }
+
     .contacto-info, .contacto-formulario {
-        padding: 1.5rem;
+        padding: 1.8rem;
         width: 90%;
     }
 
+    .contacto-info li, 
+    .contacto-formulario label {
+        font-size: 1rem;
+    }
+
+    .contacto-formulario input,
+    .contacto-formulario textarea {
+        font-size: 0.95rem;
+    }
+
+    .btn-submit {
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablets medianas (768px o menos) */
+@media screen and (max-width: 768px) {
     h1, h2 {
         font-size: 1.8rem;
     }
 
+    .contacto-info, .contacto-formulario {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
     .btn-submit {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        padding: 0.9rem;
+    }
+}
+
+/* Teléfonos (480px o menos) */
+@media screen and (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .contacto-info, .contacto-formulario {
+        padding: 1.2rem;
+    }
+
+    .contacto-info li, 
+    .contacto-formulario label {
+        font-size: 0.95rem;
+    }
+
+    .contacto-formulario input,
+    .contacto-formulario textarea {
+        font-size: 0.9rem;
+    }
+
+    .btn-submit {
+        font-size: 0.85rem;
         padding: 0.8rem;
     }
 }

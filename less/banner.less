@@ -1,13 +1,13 @@
-
 .banner {
     position: relative;
     width: 100%;
-    height: 18vh; 
+    height: 18vh;
     background: url('https://picsum.photos/id/200/1200/300') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .overlay {
@@ -23,25 +23,24 @@
 
 .banner-title {
     color: white;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     font-weight: bold;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    margin-bottom: 0.2rem; 
+    margin-bottom: 0.5rem;
+}
+
+.banner-nav {
+    position: relative;
 }
 
 .banner-nav ul {
     list-style: none;
-    
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     padding: 0;
     margin: 0;
     justify-content: center;
-}
-
-.banner-nav ul li {
-    display: inline-block;
 }
 
 .banner-nav ul li a {
@@ -60,6 +59,24 @@
     color: #222;
     transform: scale(1.05);
 }
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* RESPONSIVE */
 
 @media screen and (max-width: 1024px) {
     .banner {
@@ -82,21 +99,32 @@
 
 @media screen and (max-width: 768px) {
     .banner {
-        height: 14vh;
+        height: auto;
+        padding: 1rem 0;
     }
 
     .banner-title {
         font-size: 1.8rem;
     }
 
+    .hamburger {
+        display: flex;
+    }
+
     .banner-nav ul {
         flex-direction: column;
-        gap: 5px;
+        align-items: center;
+        gap: 8px;
+        display: none;
+    }
+
+    .banner-nav ul.show {
+        display: flex;
     }
 
     .banner-nav ul li a {
+        width: 100%;
         display: block;
         text-align: center;
-        width: 100%;
     }
 }
