@@ -1,0 +1,368 @@
+.sliderEventos {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+
+    .navigation-container-evento {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100vw;
+        padding: 0.5rem;
+    }
+
+    .navigation-index-evento {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: green;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .slidesEvento {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        flex-direction: row;
+        transition: left 0.5s ease-in-out;
+
+
+        .slideEvento {
+            position: relative;
+            width: 100vw;
+            height: 90vh;
+
+            img {
+                display: block;
+                width: 100vw;
+                height: 90vh;
+                object-fit: cover;
+            }
+
+            h2 {
+                position: relative;
+                width: 30%;
+                bottom: 60%;
+                left: 45%;
+                color: #4a793e;
+                font-size: 3rem;
+                padding: 1rem;
+                text-transform: uppercase;
+                display: flex;
+
+            }
+
+            div {
+                position: absolute;
+                padding: 10rem;
+                background-color: #254f1f;
+                box-shadow: 3px 3px 5px #000;
+                top: 5%;
+                left: 20%;
+                transform: translate(-50%, 50%);
+
+                &::before {
+                    content: '';
+                    transform: translate(-50%, -50%);
+                    background-image: radial-gradient(circle, #0000 45%, #000f 48%);
+                }
+
+                h3 {
+                    position: absolute;
+                    color: black;
+                    background-color: #4a793e;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding: 0.1rem 3rem;
+                    bottom: 25%;
+                    left:10%;
+                    border: 2px solid black;
+                    overflow: hidden;
+                    width: 100%;
+
+                }
+
+                a {
+                    position: absolute;
+                    margin-top: 5px;
+                    padding: 1rem 2rem;
+                    font-weight: bold;
+                    color: black;
+                    background: white;
+                    border: 2px solid black;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    top: 70%;
+                    right: 15%;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+.nuevosEventos {
+    background-color: #123a0f;
+    padding: 0.2rem 3rem;
+    h2{
+        color: aliceblue;
+
+    }
+
+    .introEventos {
+
+       
+        h2 {
+            text-align: center;
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: justify;
+
+        }
+    }
+
+    .proximosEventos {
+        position: relative;
+        width: 100%;
+        padding: 1rem 5rem;
+
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .eventoNuevo {
+            display:flex;
+            width: 100%;
+            background: #254f1f;
+            border: 0.1rem solid black;
+            box-shadow: 0.65rem 0.65rem 0 #002500;
+            margin-bottom: 2rem;
+
+            img {
+                width: 300px;
+                height: 445px;
+                object-fit: cover;
+
+            }
+
+            .contenidoEventoNuevo {
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+                gap: 0.5rem;
+                justify-content: center;
+                
+
+                h3 {
+                    margin: 0;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 25px;
+
+                }
+
+                a {
+                    align-self: flex-start;
+                    text-decoration: none;
+                    color: black;
+                    padding: 1rem 2rem;
+                    background: #4a793e;
+                    border-radius: 5px;
+                    font-size: 1.2rem;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.eventosRealizados {
+
+    background-color: #4a793e;
+    padding: 3rem;
+
+    .introEventosRealizados {
+        padding: 0.2rem 0.5rem;
+
+
+        h2 {
+            text-align: center;
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: justify;
+
+        }
+    }
+
+    .eventosViejos {
+        gap: 1rem;
+        padding: 3rem;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+
+        .eventoPasados {
+            padding: 1rem;
+            background: #254f1f;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 350px;
+            height: 550px;
+            text-align: center;
+
+            img {
+                width: 250px;
+                height: 250px;
+                display: block;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+
+            h3 {
+                text-align: center;
+                font-size: 1.3rem;
+                margin-top: 1rem;
+
+            }
+
+            p {
+                margin-top: 1rem;
+                font-size: 20px;
+                text-align: justify;
+            }
+        }
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 790px) {
+    .sliderEventos {
+        height: 60vh;
+
+        .slidesEvento {
+            .slideEvento {
+                height: 60vh;
+
+                img {
+                    height: 60vh;
+                }
+
+                h2 {
+                    position: absolute;
+                    font-size: 1.8rem;
+                    top: -5%;
+                    left: 10%;
+                    padding: 2rem 1rem;
+                    width: 80%;
+                }
+
+                div {
+                    padding: 1rem 6rem;
+                    bottom: 35%;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+
+                    h3 {
+                        font-size: 0.8rem;
+                        margin: 1rem;
+                        right: -15%;
+                        bottom: 20%;
+                    }
+
+                    a {
+                        padding: 0.2rem;
+                        font-size: 0.8rem;
+                        top: 75%;
+                        right: 25%;
+                    }
+                }
+            }
+        }
+    }
+
+    .eventosRealizados {
+
+        .eventosViejos {
+
+            justify-content: center;
+
+        }
+    }
+
+    .nuevosEventos {
+        .proximosEventos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .eventoNuevo {
+                justify-content: center;
+                width: 300px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin: 0.3rem;
+
+                img {
+                    width: 280px;
+                    height: 280px;
+                    padding: 0.8rem;
+
+                }
+
+                .contenidoEventoNuevo {
+                    padding: 1rem;
+                    gap: 1rem;
+
+                    h3 {
+                        font-size: 1.3rem;
+                        margin: 0;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                        text-align: justify;
+                    }
+
+                    a {
+                        align-self: center;
+                        padding: 0.5rem 1rem;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}

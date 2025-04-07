@@ -1,26 +1,10 @@
-<div class="tarjeta">
-    <h2>Adopta un compañero</h2>
-    <img src="imagenes/adopcion.jpg" alt="Gato y perro esperando adopción">
-    <p>
-        Dale un hogar permanente a un animal rescatado. Todos nuestros animales están esterilizados, vacunados y con chip identificativo.
-    </p>
-    <a href="/adopciones" target="_blank">Ver animales disponibles</a>
-</div>
 
-<div class="tarjeta">
-    <h2>Hazte socio protector</h2>
-    <img src="imagenes/apadrinamiento.jpg" alt="Persona acariciando perro">
-    <p>
-        Con una pequeña cuota mensual ayudarás a cubrir gastos veterinarios, alimentación y cuidados básicos de nuestros animales.
-    </p>
-    <a href="/hazte-socio" target="_blank">Elegir plan de ayuda</a>
+{{#each tarjetas}}
+<div class="tarjetaAyudar">
+    <h2>{{titulo}}</h2>
+    <img src="{{imagenAyudar}}" alt="{{descripcionImagen}}">
+    <p>{{descripcion}}</p>
+    <a href="{{link}}" target="_blank">Más información</a>
+    </a>
 </div>
-
-<div class="tarjeta">
-    <h2>Donaciones de material</h2>
-    <img src="imagenes/donaciones.jpg" alt="Cajas con suministros">
-    <p>
-        Necesitamos: pienso, mantas, medicamentos, juguetes y productos de limpieza. Consulta nuestra lista de necesidades prioritarias.
-    </p>
-    <a href="/donaciones" target="_blank">Ver lista completa</a>
-</div>
+{{/each}}

@@ -1,17 +1,69 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="less/main.less">
-    <title>Vite App</title>
-  </head>
-  
-  <body>
-    {{> header}}
-    <div id="app"></div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi labore expedita beatae illum modi obcaecati architecto minus, eligendi aspernatur saepe quaerat ut cumque inventore voluptas commodi! Aspernatur pariatur error accusamus.</p>
-  </body>
-  {{> footer}}
-</html>
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animalandia</title>
+  <link rel="stylesheet" href="less/main.less">
+  <script src="java/sliderNoticias.js"></script>
+</head>
+
+<body>
+  {{> header}}
+  <section class="sliderNoticias">
+    <section class="slides">
+      {{>noticiasSlide}}
+    </section>
+  </section>
+  <section class="contenedor-flex">
+
+    <section class="descripcion">
+      <div class="container">
+        <h2>Sobre Animalandia</h2>
+        <p>
+          Animalandia es una organización sin fines de lucro dedicada al rescate y protección de animales en situación
+          de vulnerabilidad. Desde su fundación, hemos trabajado incansablemente para ofrecer un refugio seguro a
+          aquellos animales que han sido maltratados, abandonados o que viven en condiciones de riesgo. Nuestra misión
+          es brindarles atención médica, nutrición adecuada y un entorno lleno de amor mientras buscamos darles una
+          segunda oportunidad a través de programas de adopción responsables. Con un equipo comprometido de
+          veterinarios, voluntarios y colaboradores, Animalandia se ha convertido en un referente de esperanza para
+          muchos animales que ahora viven una vida mejor.
+        </p>
+        <p>
+          En Animalandia, no solo nos dedicamos al rescate de animales en situaciones críticas, sino que también
+          trabajamos activamente para generar conciencia sobre la importancia de la protección animal. Organizamos
+          campañas educativas, programas de esterilización y colaboramos con otras entidades que promueven el bienestar
+          animal. Nos enorgullece haber salvado cientos de vidas, pero también estamos enfocados en crear una cultura de
+          respeto hacia todos los seres vivos. A través de nuestro trabajo, aspiramos a que cada vez más personas se
+          unan a la causa, promoviendo la adopción responsable y la empatía hacia los animales, asegurando así un futuro
+          más justo para ellos.
+        </p>
+      </div>
+    </section>
+
+    <div class="mision-container">
+      <h2 class="mision-title">Nuestra Misión</h2>
+      <div class="mision-content">
+        <p>
+          En nuestra organización, nos dedicamos con pasión y compromiso al rescate de animales en situación de
+          vulnerabilidad, brindándoles un refugio seguro y atención médica especializada. Nuestra misión es darles una
+          segunda oportunidad, asegurándonos de que reciban el cariño, la atención y la calidad de vida que merecen.
+          Trabajamos incansablemente para reducir el sufrimiento de los animales abandonados y maltratados, buscando
+          siempre mejorar sus condiciones de vida y encontrarles hogares responsables.
+        </p>
+        <p>
+          Además de nuestro trabajo de rescate, nos enfocamos en promover la concientización sobre el respeto y la
+          responsabilidad hacia los animales. Creemos que la educación es clave para construir una sociedad más
+          compasiva y protectora. A través de campañas de sensibilización, programas educativos y actividades de
+          voluntariado, buscamos inspirar a las personas a unirse a nuestra causa y contribuir al bienestar de los
+          animales. Nuestra visión es un mundo en el que todos los animales sean tratados con dignidad, amor y respeto,
+          y donde podamos garantizar su protección en todo momento.
+        </p>
+      </div>
+    </div>
+  </section>
+  {{> footer}}
+</body>
+
+</html>
