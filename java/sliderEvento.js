@@ -1,16 +1,16 @@
 class SliderController {
-    slider = null;
-    slide = [];
-    slides = null;
+    sliderEvento = null;
+    slideEvento = [];
+    slidesEvento = null;
     intervalTime = 4000;
     intervalId = null;
     currentSlide = -1;
     slideDirection = 1; // 1 o -1
 
     constructor() {
-        this.slider = document.querySelector('.sliderEventos');
-        this.slides = document.querySelector('.slides');
-        this.slide = [...document.querySelectorAll('.slides .slide')];
+        this.sliderEvento = document.querySelector('.sliderEventos');
+        this.slidesEvento = document.querySelector('.slidesEvento');
+        this.slideEvento = [...document.querySelectorAll('.slidesEvento .slideEvento')];
         this.currentSlide = 0;
         this.generateUI();
         this.moveToSlide(0);
@@ -21,7 +21,7 @@ class SliderController {
             clearTimeout(this.intervalId);
         }
         this.currentSlide = slideIndex;
-        this.slides.style.left = `-${(this.currentSlide * 100)}vw`;
+        this.slidesEvento.style.left = `-${(this.currentSlide * 100)}vw`;
         this.tick();
     }
 
@@ -32,7 +32,7 @@ class SliderController {
     }
 
     moveToNext() {
-        if (this.currentSlide + this.slideDirection >= this.slide.length || this.currentSlide + this.slideDirection < 0) {
+        if (this.currentSlide + this.slideDirection >= this.slideEvento.length || this.currentSlide + this.slideDirection < 0) {
             this.slideDirection *= -1;
         }
         this.currentSlide += this.slideDirection;
@@ -43,10 +43,10 @@ class SliderController {
  
 
         let contenedorNavegacion = document.createElement("div");
-        contenedorNavegacion.classList.add('navigation-container');
-        this.slide.forEach((_o, i) => {
+        contenedorNavegacion.classList.add('navigation-container-evento');
+        this.slideEvento.forEach((_o, i) => {
             let slideNavigate = document.createElement('div');
-            slideNavigate.classList.add('navigation-index');
+            slideNavigate.classList.add('navigation-index-evento');
             slideNavigate.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
@@ -55,7 +55,7 @@ class SliderController {
             contenedorNavegacion.appendChild(slideNavigate);
         });
 
-        this.slider.appendChild(contenedorNavegacion);
+        this.sliderEvento.appendChild(contenedorNavegacion);
     }
 }
 
