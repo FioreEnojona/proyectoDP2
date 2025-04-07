@@ -1,0 +1,46 @@
+.contenedor-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 3rem auto;
+    max-width: 1400px;
+    width: 100%;
+    gap: 2rem;
+}
+
+.descripcion, .mision-container {
+    width: 48%;
+    max-width: 900px;
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.descripcion:hover, .mision-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.descripcion h2, .mision-title {
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.descripcion p, .mision-content {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.mision-content p:last-child {
+    margin-bottom: 0;
+}
