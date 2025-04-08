@@ -10,10 +10,10 @@ export const getPageContext = (pagePath) => {
     let pageVariables = {};
     console.log("Page been loaded:", pagePath);
     switch (pagePath) {
-        case '/index.html':
+        case '/galeria.html':
             pageVariables = galeria
             break;
-        case '/blogindex.html':
+        case '/blog.html':
             pageVariables = blog
             break;
 
