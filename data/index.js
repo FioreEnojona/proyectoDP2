@@ -11,7 +11,7 @@ export const getPageContext = (pagePath) => {
     let pageVariables = {};
     console.log("Page been loaded:", pagePath);
     switch (pagePath) {
-        case '/index.html':
+        case '/preguntas.html':
             pageVariables = preguntas
             break;
         case '/donaciones.html':
