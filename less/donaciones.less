@@ -1,57 +1,135 @@
+@color1: #4a793e;
+@color2: #37642e;
+@color3: #254f1f;
+@color4: #123a0f;
+@color5: #5b915b;
+
+body {
+  background-color: @color5;
+  color: #ffffff;
+}
+
 .donacion {
-    margin: 2rem;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+  background-color: @color1;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1.2em;
+    color: #e0f2df;
+    margin-bottom: 40px;
+  }
+}
+
+
+.contribuir-opciones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+.opcion {
+  background-color: @color2;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+
+  img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1em;
+    color: #e9f5e8;
+    margin-bottom: 20px;
+  }
+}
+
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: @color4;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: @color3;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .donacion {
     h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-        text-align: center;
+      font-size: 2em;
     }
+
     p {
-        margin-bottom: 1rem;
-        font-size: 1rem;
-        line-height: 1.5;
-        text-align: center;
+      font-size: 1em;
+      padding: 0 10px;
     }
-    .contribuir-opciones {
-        display: flex;
-        gap: 1.5rem;
-        .opcion {
-            flex: 1;
-            padding: 1rem;
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            text-align: center;
-            h3 {
-                font-size: 1.5rem;
-                margin-bottom: 0.5rem;
-            }
-            img {
-                max-width: 100%;
-                height: auto;
-                margin-bottom: 1rem;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            p {
-                font-size: 0.9rem;
-                margin-bottom: 1rem;
-            }
-            a {
-                padding: 0.5rem 1rem;
-                background-color: #007bff;
-                color: #ffffff;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                font-size: 0.9rem;
-                &:hover {
-                    background-color: #0056b3;
-                }
-            }
-        }
+  }
+
+  .contribuir-opciones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .opcion {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .donacion {
+    padding: 40px 10px;
+
+    h2 {
+      font-size: 1.6em;
     }
+  }
+
+  .opcion {
+    h3 {
+      font-size: 1.3em;
+    }
+
+    p {
+      font-size: 0.95em;
+    }
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 0.95em;
+  }
 }

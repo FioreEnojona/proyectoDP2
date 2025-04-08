@@ -1,77 +1,9 @@
-<section class="faq-section">
-            <h1>Preguntas Frecuentes</h1>
-            <p class="subtitle">Aquí se encuentran algunas de las preguntas más frecuentes sobre nuestra Empresa</p>
-            <div class="faq-container">
-              <div class="faq-item">
+{{#each preguntas}}
+            <div class="faq-item">
                 <div class="icon">
-                  <img src="img/prueba.png" alt="Icon">
+                    <img src="{{icono}}" alt="Icon">
                 </div>
-                <h3>¿Cumo se financia Rescate Animal?</h3>
-                <p>
-                 Por medio de donaciones que se realizan atraves de Paypal  
-                </p>
-                
-              </div>
-              <div class="faq-item">
-                <div class="icon">
-                  <img src="img/prueba.png" alt="Icon">
-                </div>
-                <h3>¿Cuantos animales vienen al refugio? </h3>
-                <p>
-                  Recibimos más de 10.000 animales al año. Entre nuestra clínica veterinaria y el refugio, manejamos más de 14.000 animales cada año. Nuestro número diario varía según la temporada, pero podemos albergar alrededor de 500 animales a la vez, más bajo nuestro cuidado gracias a los voluntarios de acogida. 
-                </p>
-               
-              </div>
-              <div class="faq-item">
-                <div class="icon">
-                  <img src="img/prueba.png" alt="Icon">
-                </div>
-                <h3>¿Rescatan animales que han sido heridos o maltratados? </h3>
-                <p>
-                  Nuestra misión se limita a trabajar con animales que nos traen para colocarlos en nuevos hogares. Simplemente no tenemos los recursos para salir a rescatar animales en peligro. . 
-                </p>
-                
-              </div>
-              <div class="faq-item">
-                <div class="icon">
-                  <img src="img/prueba.png" alt="Icon">
-                </div>
-                <h3>¿Hacen Prueba de ADN para determinar la raza? </h3>
-                <p>
-                  No nosotros no. Las pruebas de ADN son costosas y requieren mucho tiempo, e incluso si conocemos la composición de una mascota en particular, los rasgos raciales no siempre son precisos en las razas mixtas. En cambio, nos centramos en quién es la mascota, incluida su personalidad, comportamientos extravagantes y todas las demás cosas maravillosas que la hacen única.. 
-                </p>
-                
-              </div>
-              <div class="faq-item">
-                <div class="icon">
-                  <img src="img/prueba.png" alt="Icon">
-                </div>
-                <h3>¿Puedo ser voluntario? </h3>
-                <p>
-                  Siempre necesitamos manos amigas. Puedes colaborar como hogar temporal, ayudando en rescates, transporte, difusión en redes, eventos, etc..
-                </p>
-                
-              </div>
-              <div class="faq-item">
-                <div class="icon">
-                  <img src="img/prueba.png" alt="Icon">
-                </div>
-                <h3> ¿Qué hacen con los animales rescatados? </h3>
-                <p>
-                  Primero los llevamos al veterinario para su revisión y tratamiento. Luego, pasan a recuperación física y emocional en hogares temporales hasta que estén listos para ser adoptados.. 
-
-                </p>
-                
-              </div>
-              <div class="faq-item">
-                <div class="icon">
-                  <img src="img/prueba.png" alt="Icon">
-                </div>
-                <h3>¿Atienden emergencias? </h3>
-                <p>
-                  Intentamos responder lo más rápido posible, pero dependemos de la disponibilidad de recursos. .
-                </p>
-                
-              </div>
+                <h3>{{titulo}}</h3>
+                <p>{{respuesta}}</p>
             </div>
-          </section>
+            {{/each}}

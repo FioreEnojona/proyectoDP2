@@ -3,12 +3,13 @@ import { defineConfig } from 'vite';
 import * as glob from 'glob';
 import htmlPurge from 'vite-plugin-purgecss';
 import handlebars from 'vite-plugin-handlebars';
+import { getPageContext } from "./data";
 
 const obtenerEntradasHTML = ()=>{
     return Object.fromEntries(
         [
             ...glob
-                .sync('./**/*.html', {ignore: ["./dist/**", "./node_modules/**"]}
+                .sync('./*/.html', {ignore: ["./dist/*", "./node_modules/*"]}
 
             ).map (
                 fileData => [
@@ -32,7 +33,9 @@ export default defineConfig({
     plugins: [
 
         handlebars({
-            partialDirectory: resolve(__dirname, 'partials')
+            partialDirectory: resolve(__dirname, 'partials'),
+            context: getPageContext
+
         }),
         htmlPurge({})
     ]
