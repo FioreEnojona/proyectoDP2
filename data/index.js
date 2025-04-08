@@ -1,11 +1,13 @@
 import { eventos } from "./pages/evento";
 import { noticias } from "./pages/noticia";
+import { tarjetas } from "./pages/ayuda";
 
 export const getPageContext = (pagePath)=>{
     console.log("Page to Load Context:", pagePath)
     const commonVariables = {
       ...eventos,
-      ...noticias
+      ...noticias,
+      ...tarjetas
     }
 
     let pageVariables = {};
@@ -16,6 +18,9 @@ export const getPageContext = (pagePath)=>{
             break;
         case '/eventos.html':
             pageVariables = eventos
+        break;
+        case '/comoAyudar.html':
+            pageVariables = tarjetas
         break;
     
     }

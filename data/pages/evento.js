@@ -1,7 +1,7 @@
 export const eventos = {
     eventoNuevo: [
         {
-            imgNuevoEvento: 'img/gatoadopcion.jpg',
+            imgNuevoEvento: 'imagenes/gatoadopcion.jpg',
             altNuevoEvento: 'Adopción de gatuna',
             nuevoEventoh3: 'Evento Adopción de Gatos',
             fecha: '15 de octubre de 2023',
@@ -10,7 +10,7 @@ export const eventos = {
             descripcionNuevo: 'Ven y conoce a nuestros amigos peludos que buscan un hogar. ¡Adopta y cambia una vida!'
         },
         {
-            imgNuevoEvento: 'img/esterilizacion.jpg',
+            imgNuevoEvento: 'imagenes/esterilizacion.jpg',
             altNuevoEvento: 'Campaña de esterilización',
             nuevoEventoh3: 'Campaña de Esterilización Gratuita',
             fecha: '22 de octubre de 2023',
@@ -19,7 +19,7 @@ export const eventos = {
             descripcionNuevo: 'Ofrecemos esterilizaciones gratuitas para gatos y perros. ¡Ayúdanos a controlar la población animal!'
         },
         {
-            imgNuevoEvento: 'img/SILLARUEDAS22.jpg',
+            imgNuevoEvento: 'imagenes/SILLARUEDAS22.jpg',
             altNuevoEvento: 'Anim',
             nuevoEventoh3: 'Taller para Perros de Asistencia',
             fecha: '29 de octubre de 2023',
@@ -28,7 +28,7 @@ export const eventos = {
             descripcionNuevo: 'Entrenaremos perros rescatados para que sean perros de asistencia. Porque los caninos rescatados pueden lograr mucho'
         },
         {
-            imgNuevoEvento: 'img/abraza.jpg',
+            imgNuevoEvento: 'imagenes/abraza.jpg',
             altNuevoEvento: 'Feria de donaciones',
             nuevoEventoh3: 'Feria de Donaciones para Animales',
             fecha: '5 de noviembre de 2023',
@@ -37,7 +37,7 @@ export const eventos = {
             descripcionNuevo: 'Trae donaciones de comida, juguetes y medicinas para nuestros amigos peludos. ¡Tu ayuda es invaluable!'
         },
         {
-            imgNuevoEvento: 'img/gallina.jpg',
+            imgNuevoEvento: 'imagenes/gallina.jpg',
             altNuevoEvento: 'Charla sobre aves',
             nuevoEventoh3: 'Charla sobre el Cuidado de Aves',
             fecha: '12 de noviembre de 2023',
@@ -48,37 +48,37 @@ export const eventos = {
     ],
     eventoPasado: [
         {
-            imgNuevoEvento: 'img/burro.jpg',
+            imgNuevoEvento: 'imagenes/burro.jpg',
             altPasadoEvento: 'Jornada de baño para burros',
             nuevoEventoh3: 'Día de Spa para Burros',
             descripcionPasado: 'Jornada especial de baño y cuidado para burros rescatados. Los voluntarios ayudaron a limpiar y cepillar a 15 burros de nuestro refugio.'
         },
         {
-            imgNuevoEvento: 'img/perrovotella.jpg',
+            imgNuevoEvento: 'imagenes/perrovotella.jpg',
             altPasadoEvento: 'Ayuda',
             nuevoEventoh3: 'Ayuda a Perros de la Calle',
             descripcionPasado: 'Sesiones de cuidado y rehabilitación para perros maltratados. '
         },
         {
-            imgNuevoEvento: 'img/conejo.jpg',
+            imgNuevoEvento: 'imagenes/conejo.jpg',
             altPasadoEvento: 'Taller de conejos',
             nuevoEventoh3: 'Cuidado Especial para Conejos',
             descripcionPasado: 'Taller práctico sobre alimentación, jaulas adecuadas y signos de enfermedad en conejos domésticos. Asistieron 20 dueños con sus mascotas.'
         },
         {
-            imgNuevoEvento: 'img/pajarito.jpg',
+            imgNuevoEvento: 'imagenes/pajarito.jpg',
             altPasadoEvento: 'Campaña para aves',
             nuevoEventoh3: 'Salvando Pollitos Recién Nacidos',
             descripcionPasado: 'Recaudamos $1,500 para comprar incubadoras y alimento especial para 30 pollitos abandonados que rescatamos.'
         },
         {
-            imgNuevoEvento: 'img/ovejas.jpg',
+            imgNuevoEvento: 'imagenes/ovejas.jpg',
             altPasadoEvento: 'ovejas',
             nuevoEventoh3: 'Zoologico abierto',
             descripcionPasado: 'Abrimos neustras puertas para que puedas tener actividades con las ovejas.'
         },
         {
-            imgNuevoEvento: 'img/iguana.jpg',
+            imgNuevoEvento: 'imagenes/iguana.jpg',
             altPasadoEvento: 'Alimentación de reptiles',
             nuevoEventoh3: 'Nutrición para Iguanas Rescatadas',
             descripcionPasado: 'Preparamos dietas especiales para 12 iguanas víctimas de tráfico ilegal, con suplementos de calcio y vitaminas.'
@@ -87,7 +87,7 @@ export const eventos = {
     eventoSlide: [
 
         {
-            imgEventoSlide: 'img/gatoadopcion.jpg',
+            imgEventoSlide: 'imagenes/gatoadopcion.jpg',
             altEventoSlide: 'Evento de Adopción Felina',
             slideEventoh2: 'Evento de Adopción Felina',
             lugarSlide: 'Parque de los Animales, Zona Sur',
@@ -95,7 +95,7 @@ export const eventos = {
             linkEvento: '#proximos-eventos'
         },
         {
-            imgEventoSlide: 'img/SILLARUEDAS22.jpg',
+            imgEventoSlide: 'imagenes/SILLARUEDAS22.jpg',
             altEventoSlide: 'Campaña de esterilización',
             slideEventoh2: 'Campaña de Esterilización Gratuita',
             lugarSlide: 'Clínica Veterinaria Amigos Peludos, Zona Centro',
@@ -103,7 +103,7 @@ export const eventos = {
             linkEvento: '#proximos-eventos'
         },
         {
-            imgEventoSlide: 'img/esterilizacion.jpg',
+            imgEventoSlide: 'imagenes/esterilizacion.jpg',
             altEventoSlide: 'Taller para perros',
             slideEventoh2: 'Taller para Perros de Asistencia',
             lugarSlide: 'Centro Comunitario Animalista, Zona Este',

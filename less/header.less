@@ -1,0 +1,108 @@
+.banner {
+    background: url('../imagenes/fondo.png') center/cover no-repeat;
+
+    position: relative;
+    
+    .overlay {
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 160px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.3);
+        
+        .banner-title {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            max-width: 90%;
+            color: #ffffff;
+        }
+    }
+
+    .banner-nav {
+        width: 100%;
+        z-index: 9999;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            transition: all 0.3s ease;
+            
+            li a {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+                border-radius: 3px;
+                background-color: transparent;
+                color: #ffffff;
+                text-decoration: none;
+                
+                &:hover {
+                    background-color: transparent;
+                    color: @color-verde-claro;
+                    transform: translateY(-1px);
+                }
+            }
+        }
+    }
+
+    .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000;
+        
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #ffffff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .menu-toggle {
+            display: block;
+            
+            &.active .bar {
+                &:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+                &:nth-child(2) { opacity: 0; }
+                &:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+            }
+        }
+
+        .banner-nav ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: @color-verde-medio;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            
+            &.active { display: flex; }
+            
+            li {
+                width: 100%;
+                text-align: center;
+                
+                a { padding: 1.3rem; }
+            }
+        }
+    }
+}

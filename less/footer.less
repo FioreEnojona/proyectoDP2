@@ -1,0 +1,55 @@
+footer {
+    background-color: @color-verde-muy-oscuro;
+
+    padding: 2rem 1rem;
+    text-align: center;
+    
+    p {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+        
+        &:first-child {
+            color: @color-verde-claro;
+        }
+        
+        &:nth-child(2) {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: @color-verde-tingido;
+            margin: 1rem 0;
+        }
+    }
+    
+    nav {
+        margin-top: 1.5rem;
+        
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                margin: 0 0.8rem;
+                
+                a {
+                    display: block;
+                    transition: all 0.3s ease;
+                    
+                    &:hover {
+                        opacity: 0.7;
+                        transform: translateY(-2px);
+                    }
+                    
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}
