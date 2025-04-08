@@ -3,6 +3,8 @@ import { noticias } from "./pages/noticia";
 import { tarjetas } from "./pages/ayuda";
 import { blog } from "./pages/blog";
 import { galeria } from "./pages/galeria";
+import { donaciones } from "./pages/donaciones";
+import { preguntas } from "./pages/preguntas";
 
 export const getPageContext = (pagePath)=>{
     console.log("Page to Load Context:", pagePath)
@@ -11,7 +13,9 @@ export const getPageContext = (pagePath)=>{
       ...noticias,
       ...tarjetas,
       ...blog,
-      ...galeria
+      ...galeria,
+      ...preguntas,
+      ...donaciones,
     }
 
     let pageVariables = {};
@@ -32,6 +36,13 @@ export const getPageContext = (pagePath)=>{
         case '/blog.html':
             pageVariables = blog
             break;
+        case '/preguntas.html':
+            pageVariables = preguntas
+            break;
+        case '/donaciones.html':
+            pageVariables = donaciones
+            break;
+
     }
     const finalContext = {
         ...commonVariables,
