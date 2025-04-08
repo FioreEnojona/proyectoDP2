@@ -1,0 +1,120 @@
+@color1: #4a793e;
+@color2: #37642e;
+@color3: #254f1f;
+@color4: #123a0f;
+@color5: #5b915b;
+
+
+.donacion {
+  background-color: @color1;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.contribuir-opciones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+.opcion {
+  background-color: @color2;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+
+  img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1em;
+    color: #e9f5e8;
+    margin-bottom: 20px;
+  }
+}
+
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: @color4;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: @color3;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .donacion {
+    h2 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1em;
+      padding: 0 10px;
+    }
+  }
+
+  .contribuir-opciones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .opcion {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .donacion {
+    padding: 40px 10px;
+
+    h2 {
+      font-size: 1.6em;
+    }
+  }
+
+  .opcion {
+    h3 {
+      font-size: 1.3em;
+    }
+
+    p {
+      font-size: 0.95em;
+    }
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 0.95em;
+  }
+}
