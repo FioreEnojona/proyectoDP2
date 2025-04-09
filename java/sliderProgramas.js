@@ -22,7 +22,7 @@ class SliderController {
 
     setSlideHeight() {
         const sliderWidth = this.slider.offsetWidth;
-        const aspectRatio = 16 / 9; // Puedes ajustar esto
+        const aspectRatio = 16 / 9; 
         const newHeight = sliderWidth / aspectRatio;
         this.slider.style.height = `${newHeight}px`;
     }
