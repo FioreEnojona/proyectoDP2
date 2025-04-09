@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <section class="carrusel">
     <div class="imagenes">
         <div id="img-container">
@@ -10,3 +11,16 @@
     <button id="adelante">→</button>
     <script src="data/carruselprogramas.js"></script>
 </section>
+=======
+<div class="sliderProgramas">
+    <div class="slides">
+        {{#each programas}}
+        <section class="slide">
+            <picture>
+                <img src="{{imgProgramaSlide}}" alt="{{altProgramaSlide}}" loading="lazy" />
+            </picture>
+        </section>
+        {{/each}}
+    </div>
+</div>
+>>>>>>> 7ac9171a620c2a15b212e98f0955a444d2ce8a49
