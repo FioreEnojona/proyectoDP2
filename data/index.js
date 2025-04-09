@@ -5,10 +5,11 @@ import { blog } from "./pages/blog";
 import { galeria } from "./pages/galeria";
 import { donaciones } from "./pages/donaciones";
 import { preguntas } from "./pages/preguntas";
+import { programas } from "./pages/programas";
 
 export const getPageContext = (pagePath)=>{
     console.log("Page to Load Context:", pagePath)
-    const commonVariables = {
+    const commonVariables = {   
       ...eventos,
       ...noticias,
       ...tarjetas,
@@ -16,6 +17,7 @@ export const getPageContext = (pagePath)=>{
       ...galeria,
       ...preguntas,
       ...donaciones,
+      ...programas,
     }
 
     let pageVariables = {};
@@ -41,6 +43,9 @@ export const getPageContext = (pagePath)=>{
             break;
         case '/donaciones.html':
             pageVariables = donaciones
+            break;
+        case '/programas.html':  
+            pageVariables = programas
             break;
 
     }

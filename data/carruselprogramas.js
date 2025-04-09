@@ -1,26 +1,26 @@
-let imagenes = [
-    { "url": "imagenes/hero1.jpg" },
-    { "url": "imagenes/hero2.jpg" },
-    { "url": "imagenes/hero3.jpg" }
-];
+const slides = document.querySelectorAll('.sliderProgramas .slide');
+const prev = document.querySelector('.sliderProgramas .prev');
+const next = document.querySelector('.sliderProgramas .next');
+let current = 0;
 
-let atras = document.getElementById('atras');
-let adelante = document.getElementById('adelante');
-let imagen = document.querySelector("#img img"); 
-
-let actual = 0;
-
-function actualizarCarrusel() {
-    imagen.src = imagenes[actual].url; 
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
 }
 
+function nextSlide() {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+}
 
+function prevSlide() {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+}
 
+next.addEventListener('click', nextSlide);
+prev.addEventListener('click', prevSlide);
 
-setInterval(function() {
-    actual = (actual + 1) % imagenes.length;
-    actualizarCarrusel();
-}, 7000);
-
-
-actualizarCarrusel();
+// Auto slide
+setInterval(nextSlide, 5000);
