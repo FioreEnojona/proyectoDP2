@@ -1,81 +1,62 @@
 class SliderController {
+    slider = null;
+    slide = [];
+    slides = null;
+    intervalTime = 4000;
+    intervalId = null;
+    currentSlide = -1;
+    slideDirection = 1; // 1 o -1
+
     constructor() {
         this.slider = document.querySelector('.sliderProgramas');
         this.slides = document.querySelector('.slides');
-        this.slideItems = [...document.querySelectorAll('.slides .slide')];
-        this.intervalTime = 5000;
-        this.intervalId = null;
+        this.slide = [...document.querySelectorAll('.slides .slide')];
         this.currentSlide = 0;
-        this.slideDirection = 1;
-        
-        this.initSlider();
-    }
-
-    initSlider() {
-        if (this.slideItems.length > 0) {
-            this.generateUI();
-            this.startSlider();
-            this.setSlideHeight();
-            window.addEventListener('resize', this.setSlideHeight.bind(this));
-        }
-    }
-
-    setSlideHeight() {
-        const sliderWidth = this.slider.offsetWidth;
-        const aspectRatio = 16 / 9; 
-        const newHeight = sliderWidth / aspectRatio;
-        this.slider.style.height = `${newHeight}px`;
-    }
-
-    startSlider() {
+        this.generateUI();
         this.moveToSlide(0);
     }
 
     moveToSlide(slideIndex) {
-        clearTimeout(this.intervalId);
-        
+        if (this.intervalId) {
+            clearTimeout(this.intervalId);
+        }
         this.currentSlide = slideIndex;
-        this.slides.style.left = `-${this.currentSlide * 100}%`;
-        
-        // Actualizar indicadores activos
-        document.querySelectorAll('.navigation-index').forEach((dot, index) => {
-            dot.classList.toggle('active', index === this.currentSlide);
-        });
-        
-        this.intervalId = setTimeout(() => this.moveToNext(), this.intervalTime);
+        this.slides.style.left = `-${(this.currentSlide * 100)}vw`;
+        this.tick();
+    }
+
+    tick() {
+        this.intervalId = setTimeout(() => {
+            this.moveToNext();
+        }, this.intervalTime);
     }
 
     moveToNext() {
-        const nextSlide = this.currentSlide + this.slideDirection;
-        
-        if (nextSlide >= this.slideItems.length || nextSlide < 0) {
+        if (this.currentSlide + this.slideDirection >= this.slide.length || this.currentSlide + this.slideDirection < 0) {
             this.slideDirection *= -1;
         }
-        
-        this.moveToSlide(this.currentSlide + this.slideDirection);
+        this.currentSlide += this.slideDirection;
+        this.moveToSlide(this.currentSlide);
     }
 
     generateUI() {
-        const navContainer = document.createElement('div');
-        navContainer.className = 'navigation-container';
-        
-        this.slideItems.forEach((_, index) => {
-            const dot = document.createElement('div');
-            dot.className = 'navigation-index';
-            if (index === 0) dot.classList.add('active');
-            
-            dot.addEventListener('click', () => {
-                this.slideDirection = index > this.currentSlide ? 1 : -1;
-                this.moveToSlide(index);
+        let contenedorNavegacion = document.createElement("div");
+        contenedorNavegacion.classList.add('navigation-container');
+        this.slide.forEach((_o, i) => {
+            let slideNavigate = document.createElement('div');
+            slideNavigate.classList.add('navigation-index');
+            slideNavigate.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                this.moveToSlide(i);
             });
-            
-            navContainer.appendChild(dot);
+            contenedorNavegacion.appendChild(slideNavigate);
         });
-        
-        this.slider.appendChild(navContainer);
+
+        this.slider.appendChild(contenedorNavegacion);
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new SliderController();
+    const mySlider = new SliderController();
 });
