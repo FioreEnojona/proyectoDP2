@@ -1,7 +1,7 @@
 export const noticias = {
     noticiaSlide: [
         {
-            imgNoticiaSlide: '../imagenes/Adoptar.jpg',
+            imgNoticiaSlide: 'imagenes/Adoptar.jpg',
             altNoticiaSlide: 'Campaña de adopción',
             slideNoticiah2: 'Campaña de Adopción de Gatos',
             lugarSlide: 'Centro de Adopciones Animalandia, Zona Sur',
@@ -9,7 +9,7 @@ export const noticias = {
             linkNoticia: 'contactenos.html#formulario'
         },
         {
-            imgNoticiaSlide: '../imagenes/Donacion.jpg',
+            imgNoticiaSlide: 'imagenes/Donacion.jpg',
             altNoticiaSlide: 'Evento de donaciones',
             slideNoticiah2: 'Feria de Donaciones para Animales',
             lugarSlide: 'Plaza Principal, Zona Centro',
@@ -17,7 +17,7 @@ export const noticias = {
             linkNoticia: 'contactenos.html#formulario'
         },
         {
-            imgNoticiaSlide: '../imagenes/Cuidado.jpg',
+            imgNoticiaSlide: 'imagenes/Cuidado.jpg',
             altNoticiaSlide: 'Taller educativo',
             slideNoticiah2: 'Taller sobre el Cuidado de Mascotas',
             lugarSlide: 'Auditorio Animalandia, Zona Norte',
@@ -25,7 +25,7 @@ export const noticias = {
             linkNoticia: 'contactenos.html#formulario'
         },
         {
-            imgNoticiaSlide: '../imagenes/Rescate.jpg',
+            imgNoticiaSlide: 'imagenes/Rescate.jpg',
             altNoticiaSlide: 'Evento familiar',
             slideNoticiah2: 'Día Familiar con Animales Rescatados',
             lugarSlide: 'Parque Central, Zona Este',
@@ -33,7 +33,7 @@ export const noticias = {
             linkNoticia: 'contactenos.html#formulario'
         },
         {
-            imgNoticiaSlide: '../imagenes/Esterelizar.jpg',
+            imgNoticiaSlide: 'imagenes/Esterelizar.jpg',
             altNoticiaSlide: 'Campaña de esterilización',
             slideNoticiah2: 'Campaña Gratuita de Esterilización para Mascotas',
             lugarSlide: 'Clínica Veterinaria Animalandia, Zona Oeste',
