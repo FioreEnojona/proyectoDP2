@@ -9,7 +9,7 @@ const obtenerEntradasHTML = ()=>{
     return Object.fromEntries(
         [
             ...glob
-                .sync('./*/.html', {ignore: ["./dist/*", "./node_modules/*"]}
+                .sync('./**/*.html', {ignore: ["./dist/**", "./node_modules/**"]}
 
             ).map (
                 fileData => [
@@ -35,7 +35,6 @@ export default defineConfig({
         handlebars({
             partialDirectory: resolve(__dirname, 'partials'),
             context: getPageContext
-
         }),
         htmlPurge({})
     ]
