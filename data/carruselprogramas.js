@@ -1,7 +1,7 @@
 let imagenes = [
-    { "url": "img/hero1.jpg" },
-    { "url": "img/hero2.jpg" },
-    { "url": "img/hero3.jpg" }
+    { "url": "imagenes/hero1.jpg" },
+    { "url": "imagenes/hero2.jpg" },
+    { "url": "imagenes/hero3.jpg" }
 ];
 
 let atras = document.getElementById('atras');
